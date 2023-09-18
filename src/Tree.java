@@ -32,7 +32,7 @@ public class Tree implements MultisetADT {
     }
 
     @Override
-    public boolean contains() {
+    public boolean is_empty() {
         return false;
     }
 
