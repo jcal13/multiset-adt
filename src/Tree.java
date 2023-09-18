@@ -9,6 +9,11 @@ public class Tree<T> implements MultiSet<T>{
         subtrees = new ArrayList<>();
     }
 
+    public Tree(Tree<T> root, ArrayList<Object> subtrees){
+        this.root = root;
+        this.subtrees = (ArrayList<Object>)subtrees.clone();
+    }
+
     @Override
     public boolean add(T item) {
         return false;
