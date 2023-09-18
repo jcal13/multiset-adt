@@ -10,7 +10,7 @@ public class Tree {
 
     public Tree(Object root, ArrayList<Tree> subtrees){
         this.root = root;
-        this.subtrees = subtrees;
+        this.subtrees = subtrees; cccc
     }
 
 
