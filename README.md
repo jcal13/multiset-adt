@@ -44,10 +44,10 @@ It should feel quite similar to code you would have seen in your first-year CS c
 In a small group (around 4 students), choose one of you to make a fork of
 https://github.com/CSC207-2023F-UofT/multiset-adt 
 
-- [ ] Each other team member should make a fork of that repo (or the repository owner can add the others
+- [x] Each other team member should make a fork of that repo (or the repository owner can add the others
   as collaborators).
 
-- [ ] Take the time to skim the rest of the instructions to get a better sense of what you'll be doing
+- [x] Take the time to skim the rest of the instructions to get a better sense of what you'll be doing
   in this activity. If you have any immediate questions, raise these with your group or ask your TA.
 
 - [ ] As a team, explore the python code base and identify specific pieces of code that will need to
