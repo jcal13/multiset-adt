@@ -10,7 +10,16 @@ public class Tree {
 
     public Tree(Object root, ArrayList<Tree> subtrees){
         this.root = root;
-        this.subtrees = subtrees;
+        if (subtrees.isEmpty()){
+            this.subtrees = new ArrayList<>();
+        }
+        else {
+            this.subtrees = subtrees;cv`msmadscvvhmacv
+        }
+    }
+
+    public boolean is_empty(){
+        return this.root == null;
     }
 
 
