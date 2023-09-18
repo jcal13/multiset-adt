@@ -18,6 +18,6 @@ public class Tree {
         this.root = root;
         if (root == null) {
             this.subtrees = new ArrayList<>();
-        } else this.subtrees = subtrees;
+        } else this.subtrees = new ArrayList<>(subtrees);
     }
 }
