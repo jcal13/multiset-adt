@@ -161,7 +161,7 @@ class Tree:
         #     return s
         #
         # Instead, we call a recursive helper method.
-        return self._str_indented()
+        return self._str_indeted()
 
     def _str_indented(self, depth: int = 0) -> str:
         """Return an indented string representation of this tree.
