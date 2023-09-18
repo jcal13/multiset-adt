@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Tree<T> implements MultiSet<T>{
     private Tree<T> root;
-    private ArrayList<Tree<T>> subtrees;
+    private ArrayList<Object> subtrees;
 
     public Tree(){
         root = null;
