@@ -1,6 +1,6 @@
 import org.junit.Test;
-
 import static org.junit.Assert.*;
+import java.util.List;
 
 /**
  * A template for a test class in case you decide to write any.
@@ -13,5 +13,12 @@ public class TreeTest {
     public void dummyTest() {
         assertTrue(true);
     }
+    @Test(timeout = 500)
+    public void testIsTreeEmpty() {
+        Tree<Integer> emptyTree = new Tree<>(null);
+        assertTrue(emptyTree.isEmpty());
 
+        Tree<Integer> nonEmptyTree = new Tree<>(1);
+        assertFalse(nonEmptyTree.isEmpty());
+    }
 }
