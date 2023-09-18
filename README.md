@@ -44,33 +44,33 @@ It should feel quite similar to code you would have seen in your first-year CS c
 In a small group (around 4 students), choose one of you to make a fork of
 https://github.com/CSC207-2023F-UofT/multiset-adt 
 
-- [ ] Each other team member should make a fork of that repo (or the repository owner can add the others
+- [X] Each other team member should make a fork of that repo (or the repository owner can add the others
   as collaborators).
 
-- [ ] Take the time to skim the rest of the instructions to get a better sense of what you'll be doing
+- [X] Take the time to skim the rest of the instructions to get a better sense of what you'll be doing
   in this activity. If you have any immediate questions, raise these with your group or ask your TA.
 
-- [ ] As a team, explore the python code base and identify specific pieces of code that will need to
+- [X] As a team, explore the python code base and identify specific pieces of code that will need to
   be completed. (See the general strategies and advice further below, ask other groups, or
   ask your TA for advice as needed.)
     - The next section highlights a few aspects of the code which your team should think about as you
       explore the code.
 
-- [ ] Based on your group discussion, you should each create your own branch and write a piece of code.
+- [X] Based on your group discussion, you should each create your own branch and write a piece of code.
   - Note: If your team identifies any code that needs to be written before others can start their parts,
   you might choose to work on that first, push that branch to the remote, make a pull request to merge it
   into main, and then everyone on your team will need to make sure their fork and local copies are
   up-to-date with the latest code.
 
-- [ ] When someone on your team has made a pull request, a subset of your team should take the time
+- [X] When someone on your team has made a pull request, a subset of your team should take the time
   to review it. You can pull their branch from the remote repository and try running the code locally
   and also review the code on GitHub. Practice giving both verbal feedback and written feedback
   during the lab today.
 
-- [ ] Once everyone has made a successful pull request and had it merged in, your team should continue
+- [X] Once everyone has made a successful pull request and had it merged in, your team should continue
   working to add more of the functionality.
 
-- [ ] Towards the end of the lab, your team should take some time to reflect on what worked well
+- [X] Towards the end of the lab, your team should take some time to reflect on what worked well
   and where you encountered difficulty as you worked on the code and divided up tasks between each
   of you. In particular, your group should think about how you kept track of who was working
   on what. We encourage you to share your experiences with those around you.
