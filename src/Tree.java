@@ -4,6 +4,9 @@ public class Tree {
 
     }
   private int Count(int item){
+    if(Tree.isEmpty()){
+      return 0;
+    }
     return 0;
   }
 }
