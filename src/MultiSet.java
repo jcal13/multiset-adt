@@ -1,6 +1,3 @@
-import java.util.Random;
-import java.time.*;
-
 public interface MultiSet<T> {
 
     public boolean add(T item);
