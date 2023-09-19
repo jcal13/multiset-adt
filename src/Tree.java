@@ -26,23 +26,6 @@ public class Tree<T> {
   public List<Tree<T>> getSubtrees() {
     return subtrees;
   }
-    }
-  private int count(int item) {
-    if (Tree.isEmpty()) {
-      return 0;
-    } else {
-      int num = 0;
-      if(this.root == item){
-        num += 1;
-      }
-      for(subtree x : this.getSubtrees()){
-        num += x.count(item);
-      }
-      return num;
-
-    }
-  }
-}
 
   public void setRoot(T root) {
     this.root = root;
@@ -54,6 +37,21 @@ public class Tree<T> {
 
   public boolean is_empty() {
     return (this.root == null);
+  }
+
+  public int count(T item) {
+    if (this.is_empty()) {
+      return 0;
+    } else {
+      int num = 0;
+      if (this.root.equals(item)) {
+        num += 1;
+      }
+      for (Tree<T> x : this.getSubtrees()) {
+        num += x.count(item);
+      }
+      return num;
+    }
   }
 
   public int length() {
