@@ -4,7 +4,7 @@ public class Tree {
 
     }
   private int count(int item) {
-    if (Tree.isEmpty()) {
+    if (this.isEmpty()) {
       return 0;
     } else {
       int num = 0;
