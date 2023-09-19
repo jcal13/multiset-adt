@@ -221,7 +221,7 @@ public class Tree<T> {
         }
     }
 
-    private void insert(T item) {
+    public void insert(T item) {
 
         if (is_empty()) {
             root = item;
