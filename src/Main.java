@@ -23,9 +23,9 @@ public class Main
 
         start = System.currentTimeMillis();
 
-        for (int x: itemsAdded)
+        for (int i: itemsAdded)
         {
-            myInput.remove(x);
+            myInput.remove(i);
         }
 
         end = System.currentTimeMillis();
@@ -34,7 +34,7 @@ public class Main
 
         System.out.println(String.format("%5d", n)
                 + String.format("%37d", myInput.getClass())
-                + String.format("%.6f%n", end - start));
+                + String.format("%6f%n", (end - start)/1000f));
     }
 
     public static void main(String[] args)

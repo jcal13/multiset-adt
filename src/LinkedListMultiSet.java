@@ -1,10 +1,11 @@
-public class LinkedListMultiSet<T>
+public class LinkedListMultiSet<T> extends MultiSet
 {
     private Node front;
     private int size;
 
     public LinkedListMultiSet()
     {
+        super();
         front = null;
         size = 0;
     }
