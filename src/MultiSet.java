@@ -6,7 +6,7 @@ public interface MultiSet<T> {
 
     public boolean contains(T item);
 
-    public boolean is_empty();
+    public boolean isEmpty();
 
     public int count(T item);
 

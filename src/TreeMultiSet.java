@@ -1,4 +1,4 @@
-public class TreeMultiSet<T> {
+public class TreeMultiSet<T> implements MultiSet<T> {
 
     private Tree tree;
 
