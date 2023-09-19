@@ -1,4 +1,4 @@
-public class LinkedListMultiSet<T> extends MultiSet
+public class LinkedListMultiSet<T> extends MultiSet<T>
 {
     private Node front;
     private int size;
@@ -10,6 +10,8 @@ public class LinkedListMultiSet<T> extends MultiSet
         size = 0;
     }
 
+
+    @Override
     public boolean add(T item)
     {
         Node newNode = new Node(item);
@@ -19,6 +21,7 @@ public class LinkedListMultiSet<T> extends MultiSet
         return true;
     }
 
+    @Override
     public void remove(T item)
     {
         Node cur = front;
@@ -47,6 +50,7 @@ public class LinkedListMultiSet<T> extends MultiSet
         }
     }
 
+    @Override
     public boolean contains(T item)
     {
         Node cur = front;
@@ -64,12 +68,11 @@ public class LinkedListMultiSet<T> extends MultiSet
         return false;
     }
 
-    public boolean isEmpty()
-    {
-        return front == null;
-    }
+    @Override
+    public boolean isEmpty() { return front == null; }
 
-    public int count(T item)
+    @Override
+    public Integer count(Object item)
     {
         int numSeen = 0;
         Node cur = front;
@@ -87,10 +90,8 @@ public class LinkedListMultiSet<T> extends MultiSet
         return numSeen;
     }
 
-    public int getSize()
-    {
-        return size;
-    }
+    @Override
+    public Integer getSize() { return size; }
 
     private class Node
     {

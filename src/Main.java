@@ -1,10 +1,12 @@
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Arrays;
 import java.util.Random;
 
 public class Main
 {
 
-    public static void profileMultiSet(MultiSet myInput, int n)
+    public static void profileMultiSet(MultiSet<Integer> myInput, int n)
     {
         long start;
         long end;
@@ -32,19 +34,21 @@ public class Main
 
         assert myInput.isEmpty();
 
-        System.out.println(String.format("%5d", n)
-                + String.format("%37d", myInput.getClass())
-                + String.format("%6f%n", (end - start)/1000f));
+        System.out.print(String.format("%5d", n)
+                + String.format("%1$26s", myInput.getClass())
+                + "  "
+                + String.format("%6f%n", (end - start)/1000.0));
     }
 
     public static void main(String[] args)
     {
         Integer[] numArray = {500, 1000, 2000, 4000};
-        MultiSet[] multisets = {new TreeMultiSet<Integer>(),
-                new ArrayListMultiSet<Integer>(),
-                new LinkedListMultiSet<Integer>()};
+        List<MultiSet<Integer>> multisets = Arrays.asList(
+                new TreeMultiSet<>(),
+                new ArrayListMultiSet<>(),
+                new LinkedListMultiSet<>());
 
-        for (MultiSet multiset: multisets)
+        for (MultiSet<Integer> multiset: multisets)
         {
             for (int n: numArray)
             {

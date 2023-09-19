@@ -8,8 +8,8 @@ public abstract class MultiSet<T> {
     public abstract boolean add(T item);
     public abstract void remove(T item);
     public abstract boolean contains(T item);
-    public abstract boolean isEmpty (T item);
+    public abstract boolean isEmpty ();
     public abstract Integer count(T item);
-    public abstract Integer size(T item);
+    public abstract Integer getSize();
 
 }
