@@ -1,6 +1,7 @@
 import java.util.*;
 public class Tree {
     private int root;
+    private int testing;
     private List<Tree> subtrees;
 
     public Tree(int root, List<Tree> subtrees){
