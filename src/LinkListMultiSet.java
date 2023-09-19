@@ -1,4 +1,4 @@
-public class LinkListMultiSet<T> {
+public class LinkListMultiSet<T> implements MultiSet<T>{
     private Node<T> front;
     private int size;
     LinkListMultiSet() {

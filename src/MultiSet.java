@@ -9,5 +9,5 @@ public interface MultiSet<T> {
 
     int count(T item);
 
-    int size(T item);
+    int size();
 }
