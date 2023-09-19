@@ -15,6 +15,7 @@ public class Tree {
         num += x.count(item);
       }
       return num;
+
     }
   }
 }
