@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.*;
 
 public class Tree<T extends Comparable<T>> {
 
@@ -14,7 +15,6 @@ public class Tree<T extends Comparable<T>> {
             this.subtrees = subtrees;
         }
     }
-
 
     public boolean isEmpty(){
         /* Return whether this tree is empty.
@@ -42,14 +42,46 @@ public class Tree<T extends Comparable<T>> {
         }
     }
 
-//    public double avarage(){
-//        if (subtrees.isEmpty()){
-//            return 0.0
-//        }
-//        else{
-//
-//        }
-//    }
+    public int count(T item){
+        if (this.root == null){
+            return 0;
+        } else {
+            int counter = 0;
+            if (this.root.equals(item)){
+                counter++;
+            }
+            for (Tree<T> subtree : subtrees){
+                counter += subtree.count(item);
+            }
+            return counter;
+        }
+    }
 
 
-}
+    public String __str__(){
+        return this._str_indented();
+    }
+
+
+    private String _str_indented(int depth){
+        if (this.isEmpty()) {
+            return "";
+        } else {
+            StringBuilder s = new StringBuilder(' ' * depth + (String) this.root + "\n");
+            for (Tree<T> subtree : this.subtrees){
+                s.append(subtree._str_indented(depth + 1));
+            }
+            return s.toString();
+        }
+    }
+    private String _str_indented(){
+        if (this.isEmpty()){
+            return "";
+        } else {
+            StringBuilder s = new StringBuilder((String) this.root + "\n");
+            for (Tree<T> subtree : this.subtrees){
+                s.append(subtree._str_indented(1));
+            }
+            return s.toString();
+        }
+    }
