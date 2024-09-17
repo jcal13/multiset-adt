@@ -14,4 +14,8 @@ public class TreeTest {
         assertTrue(true);
     }
 
+    public void TestAverage(){
+        Tree t = new Tree();
+        assertTrue(t.average() == 0.0);
+    }
 }
